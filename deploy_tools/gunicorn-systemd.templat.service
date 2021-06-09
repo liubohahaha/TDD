@@ -2,7 +2,7 @@
 Description=Gunicorn server for SITENAME
 [Service]
 Restart=on-failure
-User=elspeth
+User=liubo
 WorkingDirectory=/home/liubo/sites/SITENAME/source
 ExecStart=/home/liubo/sites/SITENAME/virtualenv/bin/gunicorn --bind unix:/var/sock/SITENAME.socket suplerlists.wsgi:application
 [Install]
